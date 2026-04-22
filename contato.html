@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+    <!-- NAV PRIMEIRO -->
     <nav class="navbar">
         <div id="nav_logo">
             <img src="yab_logo_branco.png" alt="logo Yab Moda Plus Size" width="50" height="50">
@@ -22,27 +24,65 @@
         <div class="nav_spacer"></div>
     </nav>
 
-    <div class="container">
-        <div class="heading">
-            <h2>Contato</h2>
-        </div>
-        <form class="form" id="contactForm">
-            <label>Nome</label>
-            <input type="text" name="Nome" placeholder="Informe seu nome" required>
-            <label>E-mail</label>
-            <input type="email" name="email" placeholder="Informe seu email" required>
-            <label>Mensagem</label>
-            <textarea name="mensagem" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <main>
+        <!-- UM SÓ container1 com os 3 cards dentro -->
+        <div class="container1">
 
-    
-        <div id="mensagem-sucesso">
-            ✅ Mensagem enviada com sucesso!
-        </div>
-    </div>
+            <div class="card">
+                
+                <div class="img">
+                    <img src="instagram1.png">
+                </div>
+                <h1>Instagram</h1>
+                <div class="content">
+                    <p>✨ Descubra nossos produtos que unem qualidade e estilo. Cada detalhe foi pensado para você se destacar no dia a dia</p>
+                    <a href="https://www.instagram.com/yabcurves/" class="contenta">Read more</a>
+                </div>
+            </div>
 
-    <main></main>
+            <div class="card">
+                <div class="img">
+                    <img src="facebook2.png">
+                </div>
+                <h1>Facebook</h1>
+                <div class="content">
+                    <p>✨ Descubra nossos produtos que unem qualidade e estilo. Cada detalhe foi pensado para você se destacar no dia a dia</p>
+                    <a href="https://www.facebook.com/share/1EVE8YNnXW/" class="contenta">Read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="whatsapp1.png">
+                </div>
+                <h1>Whatsapp</h1>
+                <div class="content">
+                    <p>✨ Descubra nossos produtos que unem qualidade e estilo. Cada detalhe foi pensado para você se destacar no dia a dia</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" class="contenta">Read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="container">
+            <div class="heading">
+                <h2>Contato</h2>
+            </div>
+            <form class="form" id="contactForm">
+                <label>Nome</label>
+                <input type="text" name="Nome" placeholder="Informe seu nome" required>
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Informe seu email" required>
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensagem-sucesso">
+                ✅ Mensagem enviada com sucesso!
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div id="footer_content">
@@ -79,10 +119,8 @@
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-
             var msg = document.getElementById('mensagem-sucesso');
             msg.style.display = 'block';
-
             setTimeout(function() {
                 msg.style.display = 'none';
             }, 3000);
